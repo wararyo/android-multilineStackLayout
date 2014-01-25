@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CardLayout">
+        <attr name="orientation" format="enum">
+            <enum value="0" name="horizontal"/>
+            <enum value="1" name="vertical"/>
+        </attr>
+        <attr name="columns" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CardLayout_LayoutParams">
+        <attr name="layout_marginTop" format="dimension"/>
+        <attr name="layout_marginRight" format="dimension"/>
+        <attr name="layout_marginBottom" format="dimension"/>
+        <attr name="layout_marginLeft" format="dimension"/>
+        <attr name="layout_width" format="dimension">
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="layout_height" format="dimension">
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="layout_gravity" format="integer"/>
+    </declare-styleable>
+
+</resources>
