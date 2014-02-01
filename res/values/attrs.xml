@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CardLayout">
+    <declare-styleable name="MultilineStackLayout">
         <attr name="orientation" format="enum">
-            <enum value="0" name="horizontal"/>
-            <enum value="1" name="vertical"/>
+        	<enum name="horizontal" value="0"/>
+        	<enum name="vertical" value="1"/>
         </attr>
         <attr name="columns" format="integer"/>
+        <attr name="space_width" format="dimension"/>
     </declare-styleable>
     
-    <declare-styleable name="CardLayout_LayoutParams">
-        <attr name="layout_marginTop" format="dimension"/>
-        <attr name="layout_marginRight" format="dimension"/>
-        <attr name="layout_marginBottom" format="dimension"/>
-        <attr name="layout_marginLeft" format="dimension"/>
-        <attr name="layout_width" format="dimension">
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="layout_height" format="dimension">
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
+    <declare-styleable name="MultilineStackLayout_MarginLayout">
+        <attr name="android:layout_marginTop" />
+        <attr name="android:layout_marginRight" />
+        <attr name="android:layout_marginBottom" />
+        <attr name="android:layout_marginLeft" />
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height"/>
         <attr name="layout_gravity" format="integer"/>
     </declare-styleable>
 
